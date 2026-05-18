@@ -295,11 +295,6 @@ export default function IterRomanum() {
       {/* LEFT: MAIN BOARD (75%) */}
       <div className="w-3/4 p-4 sm:p-8 flex flex-col items-center justify-center relative bg-gradient-to-br from-stone-200 to-stone-300 border-r-4 border-stone-800 shadow-xl z-10">
         
-        <div className="absolute top-4 left-6 bg-stone-800 text-amber-50 px-6 py-2 rounded-xl shadow-lg border-2 border-amber-600 z-20">
-          <h1 className="text-3xl font-bold uppercase tracking-widest font-serif">Iter Romanum</h1>
-          <p className="text-sm text-amber-200 text-center tracking-wide">Ludi Magister</p>
-        </div>
-
         {/* Tabellone con Griglia 8x8 per il percorso a isole separate */}
         <div 
           className="w-full h-full max-h-[90vh] grid gap-2 sm:gap-4 p-4 bg-transparent relative"
@@ -349,6 +344,11 @@ export default function IterRomanum() {
       {/* RIGHT: SIDEBAR (25%) */}
       <div className="w-1/4 bg-stone-800 flex flex-col p-6 shadow-2xl z-20 text-stone-100 relative">
         
+        <div className="mb-8 bg-stone-800 text-amber-50 px-4 py-3 rounded-xl shadow-lg border-2 border-amber-600 shrink-0">
+          <h1 className="text-2xl xl:text-3xl font-bold uppercase tracking-widest font-serif text-center">Iter Romanum</h1>
+          <p className="text-sm text-amber-200 text-center tracking-wide">Ludi Magister</p>
+        </div>
+
         <div className="mb-8 bg-stone-900 p-4 rounded-xl border border-stone-700 shadow-inner">
           <h2 className="text-xl font-semibold mb-2 text-stone-400 uppercase tracking-wider text-center">Fase Attuale</h2>
           <div className="text-center font-bold text-2xl text-amber-400 h-10 flex items-center justify-center">
