@@ -344,12 +344,12 @@ export default function IterRomanum() {
       {/* RIGHT: SIDEBAR (25%) */}
       <div className="w-1/4 bg-stone-800 flex flex-col p-6 shadow-2xl z-20 text-stone-100 relative">
         
-        <div className="mb-8 bg-stone-800 text-amber-50 px-4 py-3 rounded-xl shadow-lg border-2 border-amber-600 shrink-0">
+        <div className="mb-2 bg-stone-800 text-amber-50 px-4 py-3 rounded-xl shadow-lg border-2 border-amber-600 shrink-0">
           <h1 className="text-2xl xl:text-3xl font-bold uppercase tracking-widest font-serif text-center">Iter Romanum</h1>
           <p className="text-sm text-amber-200 text-center tracking-wide">Ludi Magister</p>
         </div>
 
-        <div className="mb-8 bg-stone-900 p-4 rounded-xl border border-stone-700 shadow-inner">
+        <div className="mb-2 bg-stone-900 p-4 rounded-xl border border-stone-700 shadow-inner">
           <h2 className="text-xl font-semibold mb-2 text-stone-400 uppercase tracking-wider text-center">Fase Attuale</h2>
           <div className="text-center font-bold text-2xl text-amber-400 h-10 flex items-center justify-center">
             {gameState === "IDLE" && "Turno di gioco"}
@@ -360,7 +360,7 @@ export default function IterRomanum() {
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col items-center justify-center mb-8">
+        <div className="flex-1 flex flex-col items-center justify-center mb-2">
           <div 
             className={`w-32 h-32 bg-stone-100 rounded-2xl flex items-center justify-center text-7xl shadow-xl border-8 transition-all duration-200 
               ${gameState === "IDLE" ? "cursor-pointer hover:scale-105 active:scale-95 border-amber-500 shadow-amber-500/50" : "cursor-not-allowed border-stone-600 opacity-80"}
@@ -380,7 +380,7 @@ export default function IterRomanum() {
           {gameState === "IDLE" && <p className="mt-4 text-amber-200 font-bold animate-pulse">Tocca per lanciare!</p>}
         </div>
 
-        <div className="bg-stone-900 rounded-xl p-4 border border-stone-700 flex-1 overflow-y-auto">
+        <div className="bg-stone-900 rounded-xl p-2 border border-stone-700 flex-1 overflow-y-auto">
           <h3 className="text-lg font-bold mb-4 border-b border-stone-700 pb-2 text-stone-300">Familiae (Classifica)</h3>
           <div className="space-y-3">
             {[...players].sort((a,b) => b.position - a.position || b.score - a.score).map((p) => (
